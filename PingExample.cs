@@ -3,9 +3,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
 
-namespace Examples.System.Net.NetworkInformation.PingTest
 
-{
     public class PingExample
     {
         public static void Main (string[] args)
@@ -31,4 +29,3 @@ namespace Examples.System.Net.NetworkInformation.PingTest
 
         }
     }
-}
