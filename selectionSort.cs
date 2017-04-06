@@ -15,24 +15,19 @@ namespace selectionSort
 			}
         }
 		
-		 public static void Sort()
-        {
-			int smallest; 
-            for (int i = 0; i < data.Length - 1; i++) //loops number of iterations equalling (data.Length - 1)
-            {
-                smallest = i; //placeholder for smallest number
-
-                for (int index = i + 1; index < data.Length; index++) //cycle through array to determine if there's a smaller remaining number
-                {
-                    if (data[index] < data[smallest]) //determine if the current number in loop is smallest and if so assign to variable smallest.
-                    {
-                        smallest = index; 
-                    }
-                }
-                Swap(i, smallest); //use Swap() to switch out the index, i, with the smallest number remaining.
+		public static void Sort(){
+		    int smallest; 
+		    for (int i = 0; i < data.Length - 1; i++){ //loops number of iterations equalling (data.Length - 1)
+			smallest = i; //placeholder for smallest number
+			for (int index = i + 1; index < data.Length; index++){ //cycle through array to determine if there's a smaller remaining number
+			    if (data[index] < data[smallest]){ //determine if the current number in loop is smallest and if so assign to variable smallest.
+				smallest = index; 
+			    }
+			}
+		     Swap(i, smallest); //use Swap() to switch out the index, i, with the smallest number remaining.
 		   }
-            	
-        }
+
+		}
 
         public static void Swap(int num1, int num2)
         {
