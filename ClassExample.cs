@@ -2,31 +2,22 @@ using System;
 
 namespace ClassExample{
 	class item{
-		public String name; //Name of item
-		public double price; // Price of item
-		public double quantity; //Quantity of item
+	public String name; //Name of item
+	public double price; // Price of item
+	public double quantity; //Quantity of item
 		
 		
 	///////////PRICE////////////
-	public void setPrice(double price) {
-		this.price = price; 
-	
-    }
-    public double getPrice() { return this.price; }
+	public void setPrice(double price) { this.price = price; }
+    	public double getPrice() { return this.price; }
+		
 	////////////QUANTITY////////////
-	public void setQuantity(double quantity) {
-		this.quantity = quantity; 
-	
-    }
-    public double getQuantity() { return this.quantity; }
+	public void setQuantity(double quantity) { this.quantity = quantity;}
+    	public double getQuantity() { return this.quantity; }
 	
 	///////////TOTAL////////////
+	public double getTotal(){ return this.getPrice() * this.getQuantity();}
 		
-		public double getTotal(){
-			
-			
-			return this.getPrice() * this.getQuantity();
-		}
 	///////////DISPLAY INFORMATION////////	
 		public void display(){
 			
@@ -35,10 +26,7 @@ namespace ClassExample{
 			Console.WriteLine("Quantity: " + this.quantity);
 			Console.WriteLine("Total: $" + this.getTotal().ToString() + "\n");
 			
-		}
-		
-		
-		
+		}	
 	}
 	
 	class itemTest{
