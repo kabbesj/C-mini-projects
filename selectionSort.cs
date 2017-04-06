@@ -2,7 +2,6 @@ using System;
 
 namespace selectionSort
 {
-	
     class Program
     {
 		public static int[] data = {44, 67, 33, 20, 1};
