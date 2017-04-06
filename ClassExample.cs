@@ -1,3 +1,10 @@
+/********************
+ClassExample.cs
+This application demonstrates how to create an instance of class item; set its name, price, and quantity; and return its propery
+information and the total price of the items, which is quantity * price.
+********************/
+
+
 using System;
 
 namespace ClassExample{
